@@ -38,7 +38,7 @@ question_classifier.pkl
 
 # Logs and misc
 *.log
-*.png
+# *.png
 *.json
 !added_tokens.json
 !config.json
