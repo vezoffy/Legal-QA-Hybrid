@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Large Data & Models
+*.pt
+*.safetensors
+*.bin
+*.h5
+*.npy
+*.pkl
+
+# Directories containing large artifacts
+generative_model/
+generative_model_improved/
+t5_legal_checkpoints/
+t5_squad_checkpoints/
+t5_squad_legal_model/
+evaluation_plots/
+archive/
+
+# Specific large files
+legal_qa_processed.json
+legal_qa_processed.json_embeddings.npy
+legal_qa_retrieval_indices_bm25.pkl
+legal_qa_retrieval_indices_embeddings.npy
+extractive_model.pt
+que_classifier.pkl
+question_classifier.pkl
+
+# Logs and misc
+*.log
+*.png
+*.json
+!added_tokens.json
+!config.json
+!generation_config.json
+!special_tokens_map.json
+!tokenizer_config.json
+!vocab.json
+!merges.txt
