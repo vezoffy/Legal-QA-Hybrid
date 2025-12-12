@@ -16,6 +16,13 @@ This project implements a hybrid **Legal Question Answering System** that combin
 - `generative_model/`: Directory for fine-tuned T5 model artifacts.
 - `legal_qa_processed.json`: Preprocessed training dataset (Not included in repo due to size).
 
+## Datasets & Training Strategy
+
+This model employs a two-stage training strategy to ensure high-quality, domain-specific text generation:
+
+1.  **General English Fluency**: The model is first fine-tuned on the **[SQuAD (Stanford Question Answering Dataset)](https://rajpurkar.github.io/SQuAD-explorer/)** to establish strong reading comprehension and proper English sentence generation capabilities.
+2.  **Legal Domain Specialization**: The model is then further fine-tuned using the **[LLM Fine Tuning Dataset of Indian Legal Texts](https://www.kaggle.com/datasets/akshatgupta7/llm-fine-tuning-dataset-of-indian-legal-texts)** from Kaggle. This dataset is preprocessed to adapt the model to the specific nuances and terminology of the Indian legal system.
+
 ## Installation
 
 1. Clone the repository:
